@@ -1,0 +1,431 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     
+     /* background-color: #79797b; */
+     background-color: whitesmoke;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+     float: left;
+     width: 100%;
+     margin: 0;
+}
+header li img{
+     /* float: right; */
+     margin: 5px;
+     width: 20px;
+     height: auto;
+}
+a{
+     color: black;
+}
+h3{
+     font-family: 'Ballet', cursive;
+     font-size: 1.5rem;
+     float: left;
+     padding: 0px 100px 0px 15px;
+}
+nav{
+     float: left;
+     width: 80%;
+}
+ul li{
+     font-size: .7em;
+     list-style: none;
+     float: left;
+     width: 10%;
+}
+.booking{
+     float: right;
+     display: block;
+     /* width: 12%; */
+}
+img{
+     height: 5px;
+     width: 5px;
+}
+.intro{
+     float: left;
+     width:100%;
+     height: 500px;
+     font-size: 1.5em;
+     background-image: url("img/glamBackground.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+}
+.intro h1{
+     font-family: 'My Soul', cursive;
+     color: white;
+     font-size: 5rem;
+     padding: 0px 0px 0px 55px;
+     margin: 0px;
+     text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+}
+/* .intro .top{
+     padding: 55px 0px 0px 55px;
+     margin:0%;
+} */
+.intro p{
+     color: white;
+     padding: 0px 0px 0px 55px;
+     font-size: .75em;
+     text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+}
+.intro > a{
+     display: block;
+     /* float: left; */
+     margin: 0 0 0 55px;
+     color: white;
+     background: black;
+     font-size: .7em;
+     width: 90px;
+}
+.intro div{
+     float: left;
+     color: white;
+     margin: 55px 30px;
+     background: black;
+     width: 165px;
+     height: 185px;
+}
+.services{
+     margin: 0;
+     padding: 0;
+}
+div span{
+     float: left;
+     padding: 30px 20px;
+     font-size: .66em;
+     width: 100%;
+}
+.boldNumber{
+     font-size: 1.9em;
+     float: left;
+     font-weight: bold;
+     padding: 0px 0px 0px 20px;
+     width: 55%;
+
+}
+.services p{
+     font-size: .75em;
+     padding: 3px 0px;
+     clear: none;
+}
+.services img{
+     width: 75px;
+     height: auto;
+     margin: 25px 0 0 0;
+}
+.services a{
+     float: left;
+     margin: 0 25px 25px 25px;
+     background: white;
+     display: block;
+     color: black;
+     font-size: .75em;
+}
+.services nav{
+     float: left;
+     width: 100%;
+     padding: 0 15%;
+}
+.services nav article{
+     float: left;
+     width: 33.3333%;
+     padding: 0 5px 30px 5px;
+     text-align: center;
+}
+.pitch{
+     margin: 0;
+}
+section section{
+     float: left;
+     width: 50%;
+     padding: 5% 12%;
+}
+section section h2{
+     font-size: 1.7em;
+}
+section section p{
+     font-size: .75em;
+}
+section section a{
+     float: left;
+     color: white;
+     display: block;
+     background:black;
+     font-size: .6em;
+     width: 30%;
+     padding: 2% 5%;
+}
+/* img.pBraids{
+     float: left;
+     width: 40%;
+     height: auto;
+     padding: 2% 5%;
+} */
+img.vidPlaceHolder{
+     padding: 10%, 0, 0, 0;
+     height: 300px;
+     width: auto;
+}
+
+
+.employeePortraits{
+     float: left;
+     padding: 2% 30%;
+     width: 100%;
+     margin: 0;
+     /* background: silver; */
+}
+.drop{
+     display: flex;
+     align-items:flex-end;
+     justify-content: center;
+     text-align: center;
+     width: 100%;
+     padding: 0 5%;
+}
+.name{
+     float: left;
+     clear: both;
+     width: 100%;
+     /* display: flex;
+     justify-content: center; */
+}
+div > div{
+     float: left;
+     width: 30%;
+     height: 300px;
+     padding: 0% 1.5%;
+     text-align: center;
+}
+
+div > div span{
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     position: relative;
+     width: 70%;
+     padding: 1%;
+     padding: 1% 10%;
+     margin: 99% 15% 0% 15%;
+     background: black;
+     bottom: 0%;
+}
+.colorist{
+     background-image: url("img/redBraid.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: block;
+     color: white;
+}
+.stylist{
+     background-image: url("img/hauteCoutureBraidBunCrop.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: block;
+     color: white;
+}
+.beautician{
+     background-image: url("img/blackHeadScarf.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: block;
+     color: white;
+}
+
+.sale{
+     float: left;
+     width: 100%;
+     height: 350px;
+     padding: 0 25px;
+     background-image: url("img/glamHeadReverse.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: left;
+     
+     
+}
+.scaleDown{
+     float: right;
+     width: 50%;
+}
+.sale span{
+     float: left;
+     /* padding: 30px 20px; */
+     font-size: .66rem;
+     width: 100%;
+     /* text-shadow:
+          -1px -1px 0 rgb(255, 255, 255),
+          1px -1px 0 rgb(255, 255, 255),
+          -1px 1px 0 rgb(255, 255, 255),
+          1px 1px 0 rgb(255, 255, 255); */
+}
+.sale span.boldNumber{
+     font-size: 1.9rem;
+     float: left;
+     font-weight: bold;
+     padding: 0;
+     width: 22%;
+     /* text-shadow:
+          -1px -1px 0 rgb(255, 255, 255),
+          1px -1px 0 rgb(255, 255, 255),
+          -1px 1px 0 rgb(255, 255, 255),
+          1px 1px 0 rgb(255, 255, 255); */
+}
+.sale p{
+     font-size: 1.5em;
+     margin: 20px 0;
+     clear: none;
+     /* text-shadow:
+          -1px -1px 0 rgb(255, 255, 255),
+          1px -1px 0 rgb(255, 255, 255),
+          -1px 1px 0 rgb(255, 255, 255),
+          1px 1px 0 rgb(255, 255, 255); */
+     
+}
+.sale a{
+     display: block;
+     text-align: center;
+     background: black;
+     font-size: .66em;
+     color: white;
+     padding: 3% 5%;
+     width: 65%;
+}
+.lookBook h2{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     text-align: center;
+}
+.magazine{
+     display: grid;
+     /* grid-template-columns: 33.3333% 33.3333% 33.3333%; */
+     /* grid-column-gap: 1em;
+     grid-row-gap: 1em; */
+     /* grid-gap: 1em; */
+     /* width: 100%;
+     padding: 10%;
+     display: grid; */
+     grid-template-columns: repeat(3, 1fr);
+     grid-auto-rows: minmax(200px, auto);
+     grid-gap: 1em;
+     justify-items: center;
+     align-items: start;
+}
+.bun{
+     grid-column: 1;
+     grid-row: 1/2;
+     width: 100%;
+     height: auto;
+}
+.afro{
+     grid-column: 2;
+     grid-row: 1/3;
+     width: 100%;
+     height: auto;
+}
+.twinBuns{
+     grid-column: 3;
+     grid-row: 1;
+     width: 100%;
+     height: auto;
+}
+.chignon{
+     grid-column: 1;
+     grid-row: 2/4;
+     width: 100%;
+     height: auto;
+}
+.blue{
+     grid-column: 2;
+     grid-row: 3;
+     width: 100%;
+     height: auto;
+}
+.purple{
+     grid-column: 3;
+     grid-row: 2/4;
+     width: 100%;
+     height: auto;
+}
+/* .magazine .rect{
+     float: left;
+     width: 30.3333%;
+     height: 650px;
+     padding: 1.5% 1.5%;
+}
+.magazine .square{
+     float: left;
+     width: 30.3333%;
+     height: 325px;
+     padding: 1.5% 1.5%;
+} */
+
+/* .left{
+     
+     grid-column: 1;
+     width: 350px;
+     height: auto;
+     padding: 20px;
+}
+.center{
+     grid-column: 2;
+     
+     width: 350px;
+     height: auto;
+}
+.right{
+     grid-column: 3;
+    
+     width: 350px;
+     height: auto;
+} */
+
+/* footer {
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
